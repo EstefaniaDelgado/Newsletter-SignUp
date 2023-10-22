@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-img{
+    height: 40vh;
+}
+
+.img-mobile{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.img-desktop{
+    display: none;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.info-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-container ul{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.info-container ul li{
+    list-style: none;
+    padding-left: 35px;
+    position:relative;
+    
+}
+
+.info-container ul li::before{
+  content: url('../assets/images/icon-list.svg');
+  left:0;
+  position: absolute;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, button{
+  padding: 15px 6px;
+}
+
+form button{
+    background-color:hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+
+}
+
+/* Query */
+@media(min-width:425px){
+    .img-mobile{
+        border-radius: 0 0 15px 15px ;
+    }
+}
+
+@media(min-width:768px){
+   main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+   }
+
+   .card-container{
+    height: 85%;
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px
+   }
+
+    .card-container{
+        flex-direction: row-reverse;
+        border-radius: 15px;
+    }
+
+    .info-container{
+        gap: 10px;
+    }
+
+    .container-img{
+        height: 100%;
+    }
+
+    .img-mobile{
+        display: none;
+    }
+
+    .img-desktop{
+        display: block;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .info-container ul{
+       padding: 0;
+    }
+
+    form{
+        padding: 5px;
+    }
+    
+}
+
+@media(min-width:1024px){
+    .card-container{
+        width: 65%;
+    }
+
+    .container-img{
+        flex: 0.45;
+    }
+
+    .img-desktop{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .info-container{
+        padding: 30px 20px;
+        flex: 0.55;
+    }
+  
+
+    form input, button{
+      padding: 10px;
+    }
+}
