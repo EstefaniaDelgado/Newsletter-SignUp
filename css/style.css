@@ -162,3 +162,76 @@ form button{
       padding: 10px;
     }
 }
+
+@media(min-width:1440px){
+    form{
+        padding: 7px;
+    }
+}
+
+/* SUCCESS VIEW */
+.body-success{
+    height: 100vh;
+}
+
+.main-success{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.thanks-container h1{
+    font-size: 2.5rem;
+}
+
+.info-container-success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 35px;
+    gap: 20px;
+}
+
+.btn-container{
+    padding: 40px 30px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.btn-sucess{
+    background-color:hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Querys */
+@media (min-width:768px){
+    .thanks-container{
+        width: 450px;
+        background-color:  hsl(0, 0%, 100%);
+        flex: 0;
+        padding: 30px 35px;
+    }
+
+    .info-container-success{
+        padding:0;
+    }
+
+    .btn-container{
+        padding: 0;
+    }
+}
