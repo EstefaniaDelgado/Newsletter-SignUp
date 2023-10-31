@@ -75,6 +75,12 @@ form input, button{
   padding: 15px 6px;
 }
 
+.error-message {
+    color: red;
+    display: none;
+    text-align: right;
+}
+
 form button{
     background-color:hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
